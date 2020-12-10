@@ -1,12 +1,13 @@
 <?php
 
 
-$name = "Matheus Papini - O Primo";
-echo "Hi, $name";
+$name = "Matheus Papini - ";
+$name2 = "O Primo";
+echo "Hi, $name $name2";
 echo '<br/>';
 
-echo 'Hi, $name';
+echo 'Hi, $name $name2';
 echo '<br/>';
 
-echo 'Hi, ' . $name;
+echo 'Hi, ' . $name . $name2;
 
