@@ -17,3 +17,17 @@ echo '<br/>';
 $dosPath = 'C:\\WINDOWS\\SYSTEM\\';
 $publisher = 'Tim O\'Reilly';
 echo "$dosPath$publisher";
+
+echo '<br/>';
+
+$hum = 'HUM';
+
+$a = 'HUM';
+$b = "$hum";
+
+if ($a == $b) {
+ echo "a and b are equal";
+}else{
+ echo "a and b are unequal";
+}
+
