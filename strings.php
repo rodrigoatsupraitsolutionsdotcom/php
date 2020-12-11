@@ -31,3 +31,7 @@ if ($a == $b) {
  echo "a and b are unequal";
 }
 
+
+if (is_string($b)) {
+ // $x is a string
+}
