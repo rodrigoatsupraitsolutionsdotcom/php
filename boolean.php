@@ -13,14 +13,13 @@
 
 $a = '0';
 
-
 if (empty($a)) { 
 
-	echo 'EH VAZIA';
+	echo 'TRUE';
 
 } else {
 
-	echo 'NAO EH VAZIA';
+	echo 'FALSE';
 
 }
 
