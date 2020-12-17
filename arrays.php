@@ -1,16 +1,34 @@
 <?php
+/*
+$cebola[0] = "Edison";
+$cebola[1] = "Wankel";
+$cebola[2] = "Crapper";
+$cebola[3] = null;
+
+$tomate['Light bulb'] = "Edison";
+$tomate['Rotary Engine'] = "Wankel";
+$tomate['Toilet'] = "Crapper";
 
 
-$person[0] = "Edison";
-$person[1] = "Wankel";
-$person[2] = "Crapper";
-$person[3] = null;
-
-$creator['Light bulb'] = "Edison";
-$creator['Rotary Engine'] = "Wankel";
-$creator['Toilet'] = "Crapper";
-
-
-echo $person[2];
+echo $cebola[2];
 echo '<br>';
-echo $creator['Light bulb'];
+echo $tomate['Light bulb'];
+*/
+
+$person = array(
+	"Edison", 
+	"Wankel", 
+	"Crapper"
+);
+
+print_r($person);
+
+echo '<br>';
+
+$creator = array(
+	'Light bulb' => "Edison",
+	'Rotary Engine' => "Wankel",
+	'Toilet' => "Crapper"
+);
+
+print_r($creator);
