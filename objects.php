@@ -19,7 +19,12 @@
 	$bira->atribuirNome('Bira Timberlake');
 	echo "Hello, {$bira->nome} <br/>";
 	
-	$tc = new Pessoa;
-	$tc->atribuirNome('Nakahodo');
-	echo "Look out below {$tc->nome} <br/>";
+	$naka = new Pessoa;
+	$naka->atribuirNome('Nakahodo');
+	echo "Look out below {$naka->nome} <br/>";
+	
+	$pessoas[0] = $bira;
+	$pessoas[1] = $naka;
+	
+
 	
