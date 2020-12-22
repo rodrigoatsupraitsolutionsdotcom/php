@@ -37,7 +37,7 @@
 	
 */
 
-
+/*
 	$cor = "branco";
 
 	$corAtual =& $cor;
@@ -61,22 +61,49 @@
 	echo $corAtual;
 	
 	
+*/
+/*
+function &retRef()
+{
+	if(!isset($var)){
+		$var = "valor inicial";
+	}
 
+	return $var;
+}
+
+$php  =& retRef();
+$java =& retRef();
 	
+echo $php;
+echo "<br>";
+echo $java;
+echo "<br>";
+
+$php = "VALOR NOVO DO PHP";
+$nova =& retRef();
+
+echo $php;
+echo "<br>";
+echo $nova;
+echo "<br>";
+
+*/
+
+$valor = "valor de fora <br>";
+
+function imprimir()
+{
 	
+	$valor = "valor de dentro <br>";
 	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
+	echo $valor;
+}
+
+imprimir();
+
+
+echo $valor;
+
+
+
