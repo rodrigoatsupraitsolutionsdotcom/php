@@ -15,3 +15,39 @@
 	} else {
 		echo "No!";
 	}
+	
+	
+	echo "<br>";
+	echo "<br>";
+	echo "<br>";
+	echo "<br>";
+	
+	
+	$a = "guilherme";
+	
+	$guilherme = "10";
+	
+	echo $guilherme;
+	echo "<br>";
+	echo $a;
+	echo "<br>";
+	echo $$a;
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
