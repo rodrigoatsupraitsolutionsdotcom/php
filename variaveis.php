@@ -50,6 +50,19 @@
 	echo "<br>";
 	echo $corAtual;
 	
+	echo "<br>";
+	
+	unset($corAtual);
+	
+	$corAtual = "novo valor";
+	
+	echo $cor;
+	echo "<br>";
+	echo $corAtual;
+	
+	
+
+	
 	
 	
 	
