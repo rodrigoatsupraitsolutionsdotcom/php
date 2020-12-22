@@ -1,6 +1,6 @@
 <?php
 
-
+/*
 	$what = "Fred";
 	$what = 35;
 	$what = array("Fred", 35, "Wilma");
@@ -33,6 +33,22 @@
 	echo "<br>";
 	echo $$a;
 	
+	
+	
+*/
+
+
+	$cor = "branco";
+
+	$corAtual =& $cor;
+	
+	$cor = "azul";
+	
+	$corAtual = "roxo";
+	
+	echo $cor;
+	echo "<br>";
+	echo $corAtual;
 	
 	
 	
