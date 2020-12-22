@@ -5,7 +5,8 @@
 	$what = 35;
 	$what = array("Fred", 35, "Wilma");
 	
-	$day = 60 * 60 * 24;
+	$day = null;
+	//$day = 60 * 60 * 24;
 	//echo "There are {$day} seconds in a day.";
 	
 	
