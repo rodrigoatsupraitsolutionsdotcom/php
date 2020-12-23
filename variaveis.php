@@ -106,7 +106,7 @@ imprimir();
 echo $valor;
 */
 
-
+/*
 function updateCounter(&$a)
 {
 	$a = $a + 1;
@@ -121,5 +121,47 @@ echo updateCounter($counter);
 echo "<br>";
 
 echo $counter;
+
+
+*/
+
+/*
+function updateCounter()
+{
+	
+	 # global $counter;
+	 # $counter = $counter + 1;
+	
+	 
+	 $GLOBALS['counter'] = $GLOBALS['counter'] + 1;
+}
+
+$counter = 10;
+updateCounter();
+echo $counter;
+
+*/
+
+
+function updateCounter()
+{
+	static $counter = 0;
+	$counter++;
+
+	echo "Static counter is now {$counter}<br/>";
+}
+
+$counter = 10;
+updateCounter();
+updateCounter();
+updateCounter();
+updateCounter();
+updateCounter();
+updateCounter();
+
+echo "Global counter is {$counter}";
+
+
+
 
 
