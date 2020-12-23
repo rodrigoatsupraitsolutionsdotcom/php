@@ -89,7 +89,7 @@ echo $nova;
 echo "<br>";
 
 */
-
+/*
 $valor = "valor de fora <br>";
 
 function imprimir()
@@ -104,6 +104,22 @@ imprimir();
 
 
 echo $valor;
+*/
 
+
+function updateCounter(&$a)
+{
+	$a = $a + 1;
+	
+	return $a;
+}
+
+$counter = 10;
+
+echo updateCounter($counter);
+
+echo "<br>";
+
+echo $counter;
 
 
