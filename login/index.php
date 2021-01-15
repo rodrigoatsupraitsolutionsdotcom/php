@@ -1,21 +1,29 @@
 <html>
    <head>
-      <title>Login System</title>
+      <title><?php echo ($_GET['param1']." ".$_GET['param2']); ?></title>
    </head>
    <body>
+
+   
    <?php if ( $_GET['bad'] == 1 ) { ?>
    <font color="brown">Error unknown<br/></font>
    <?php } ?>
+   
    <?php if ( $_GET['bad'] == 2 ) { ?>
    <font color="red">Bad login or password, please try again<br/></font>
    <?php } ?>
+   
    <?php if ( $_GET['bad'] == 3 ) { ?>
    <font color="red">Access denied, GTFOHMF!<br/></font>
    <?php } ?>
+   
    <?php if ( $_GET['good'] == 1 ) { ?>
    <font color="red">Volte sempre!<br/></font>
    <?php } ?>
-      <form action="login.php" method="post">
+   
+   
+   
+      <form action="login.php" method="get">
          <table width="400" border="2" cellspacing="0" cellpadding="2">
             <tr>
                <td>Username:</td>
@@ -32,5 +40,7 @@
             </tr>
          </table>
       </form>
+	  
+
    </body>
 </html>

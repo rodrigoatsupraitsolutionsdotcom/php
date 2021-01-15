@@ -10,14 +10,8 @@
 		exit;
 	}
 
-	$sql = "SELECT
-				id 
-			FROM 
-				users
-			WHERE 
-				name='".$_POST['user']."' 
-				AND password=MD5('".$_POST['password']."')
-			";
+	$sql = "SELECT id, name FROM users WHERE name='".$_POST['user']."' AND password=MD5('".$_POST['password']."')";
+
 	if (!$result = $mysqli->query($sql)) {
 		header( "Location: index.php?bad=1" );
 		exit;
@@ -29,6 +23,7 @@
 
 			session_start(); 
 			$_SESSION['user'] = $user['id']; 
+			$_SESSION['name'] = $user['name'];
 			header( "Location: welcome.php" );
 			exit;
 		}else{
