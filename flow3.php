@@ -39,3 +39,31 @@ foreach ($animais as $x => $y) {
 echo 'A chave é: '. $x . ' e o value é ' . $y . ' <BR>';
 
 */
+
+
+/*
+
+try {
+
+	$a = 1;
+	$b = 0;
+
+	if($b <= 0){
+		
+		throw new Exception('Mensagem qualquer');
+		
+	}
+
+	$c = $a / $b;
+
+	echo $c;
+	
+} catch (Exception $error) {
+	
+	echo 'Deu problema!' . $error->getMessage();
+	
+}
+
+*/
+
+
