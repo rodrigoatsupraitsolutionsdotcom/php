@@ -69,7 +69,7 @@ for ($i=0;$i < sizeof($array);$i++){
 	}
 
 */
-
+/*
 $i = 0;
 $j = 0;
 $contador = 0;
@@ -86,3 +86,47 @@ while ($i < 10) {
 }
 
 //echo "{$i}, {$j}";
+
+*/
+/*
+
+$i = 0;
+$j = 0;
+$z = 0;
+
+while ($z < 10) {
+	while ($i < 10) {
+		while ($j < 10) {
+			if ($j == 5) {
+				echo "{$i}, {$j}, {$z} <br>";
+				break 1; // breaks out of two while loops
+			}
+
+			$j++;
+		}
+		$i++;
+	}
+	$z++;
+}
+
+*/
+
+$i = 0;
+$j = 0;
+
+while ($i < 10) {
+	echo 'i = ' . $i . '<br>';
+	
+	$i++;
+	
+	while ($j < 10) {
+		echo ' >>>>> j = ' . $j . '<br>';
+		
+		if ($j == 5) {
+			continue 2; // continues through two levels
+			//break;
+		}
+
+		$j++;
+	}
+}
