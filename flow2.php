@@ -76,7 +76,7 @@ $contador = 0;
 
 while ($i < 10) {
 	echo 'i = ' . $i . '<br>';
-	$j = 0;
+	
 	while ($j < 10) {
 		echo ' >>>>> j = ' . $j . '<br>';
 		echo ++$contador . '<br>';
