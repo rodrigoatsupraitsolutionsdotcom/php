@@ -63,13 +63,26 @@ for ($i=0;$i < sizeof($array);$i++){
 	if ($achei === false) {
 	
 		echo 'Nao achei ninguém';
-	 
 	}else{
-		
+
 		echo $array[$achei];
-		
 	}
 
 */
 
+$i = 0;
+$j = 0;
+$contador = 0;
 
+while ($i < 10) {
+	echo 'i = ' . $i . '<br>';
+	$j = 0;
+	while ($j < 10) {
+		echo ' >>>>> j = ' . $j . '<br>';
+		echo ++$contador . '<br>';
+		$j++;
+	}
+	$i++;
+}
+
+//echo "{$i}, {$j}";
