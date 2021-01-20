@@ -1,5 +1,5 @@
 <?php
-
+/*
 $name = 'nakahoasdfasdfasddo';
 
 switch($name):
@@ -28,6 +28,48 @@ default:
  break;
  
 endswitch;
+*/
 
+
+$array = ['Rodrigo', 'Marcelo', 'Guilherme', 'Gustavo', 'João', 'Pablo'];
+
+/*
+
+for ($i=0;$i < sizeof($array);$i++){
+	
+	if($array[$i] == 'Guilherme'){
+		echo 'Achei o '.$array[$i].' na posição array[' . $i . ']';
+	}
+	
+	
+	switch($array[$i]):
+
+	 case 'Rodrigo':
+	 case 'Gustavo':
+		echo $array[$i] . $i . '<br>';
+		break;
+	 case 'Pablo':
+		echo $array[$i] . $i . '<br>';
+		break;
+	 
+	endswitch;
+	
+}
+
+*/
+/*
+	$achei = array_search ( 'Rodrigo' , $array);
+
+	if ($achei === false) {
+	
+		echo 'Nao achei ninguém';
+	 
+	}else{
+		
+		echo $array[$achei];
+		
+	}
+
+*/
 
 
