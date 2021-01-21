@@ -66,4 +66,38 @@ try {
 
 */
 
+/*
+function someFunction(){
+	echo 'Fui chamada! <BR>';
+}
 
+register_tick_function("someFunction");
+
+declare(ticks = 1) {
+	echo ++$i . '<BR>';
+	echo ++$i . '<BR>';
+	echo ++$i . '<BR>';
+	echo ++$i . '<BR>';
+	echo ++$i . '<BR>';
+	echo ++$i . '<BR>';
+}
+
+
+
+*/
+/*
+$array = [1,2,3,4,5,6,7,8,9,10];
+
+// A function called on each tick event
+function tick_handler()
+{
+    echo "tick_handler() called\n";
+}
+
+register_tick_function('tick_handler');
+
+declare(ticks=1);
+
+echo sizeof($array);
+
+*/
