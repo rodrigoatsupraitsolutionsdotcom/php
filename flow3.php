@@ -85,6 +85,7 @@ declare(ticks = 1) {
 
 
 */
+
 /*
 $array = [1,2,3,4,5,6,7,8,9,10];
 
@@ -101,3 +102,44 @@ declare(ticks=1);
 echo sizeof($array);
 
 */
+/*
+function soma ($a, $b) {
+	
+	exit;
+	
+	return $a + $b;
+}
+
+
+
+echo soma(1,2);
+
+
+
+
+*/
+
+for ($i = 0; $i < 10; $i++) {
+ // oops, found an error
+ echo $i . ' <BR>';
+ if ($i == 5) {
+	goto cleanup;
+ }
+}
+
+cleanup:
+echo 'Cheguei no cleanup <br>';
+echo 'Cheguei no cleanup2 <br>';
+
+
+
+
+
+
+
+
+
+
+
+
+
