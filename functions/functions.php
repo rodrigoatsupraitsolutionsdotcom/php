@@ -113,3 +113,123 @@ function nosso_str_repeat($palavra, $quantas_vezes)
 
 echo nosso_str_repeat('Pablo', 100);
 */
+
+/*
+
+function outer ($a)
+{
+	
+	if(!function_exists('inner')){
+		
+		function inner ($b)
+		{
+			echo " B: $b";
+		}
+	}
+
+	echo " A: $a";
+}
+
+// outputs "well, hello there reader"
+outer("well");
+inner('inner');
+inner('inner');
+inner('inner');
+outer("well");
+inner('inner');
+inner('inner');
+inner('inner');
+outer("well");
+inner('inner');
+inner('inner');
+
+
+*/
+/*
+function foo()
+{
+	$a += 2;
+}
+foo();
+foo();
+$a = 3;
+foo();
+foo();
+echo $a;
+*/
+
+/*
+function foo($a)
+{
+	global $a;
+
+	return $a += 2;
+}
+
+
+echo foo();
+
+$a = 3;
+
+echo foo($a);
+echo $a;
+
+*/
+
+/*
+global $cebolinha;
+
+$cebolinha = & $GLOBALS['cebolinha'];
+*/
+
+/*
+function counter()
+{
+	static $count = 0;
+
+	return $count++;
+}
+
+print counter();
+print counter();
+print counter();
+print counter();
+print counter();
+
+*/
+/*
+function fazAlgumaCoisa(&$a, $b, &$c) {
+	
+	global $z;
+	
+	$a = strtoupper($a);
+}
+
+$nome = 'Rodrigo Nakahodo';
+
+print $nome;
+
+fazAlgumaCoisa($nome);
+
+pulaLinha();
+pulaLinha();
+
+print $nome;
+
+*/
+
+function fazOutraCoisa($a = '239874928748923'){
+
+		print $a;
+}
+
+$x = 'Rodrigo';
+
+fazOutraCoisa($x);
+fazOutraCoisa();
+
+
+
+
+
+
