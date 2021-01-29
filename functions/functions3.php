@@ -1,5 +1,5 @@
 <?php
-
+/*
 $names = array("Fred", "Barney", "Wilma", "Betty");
 
 
@@ -23,3 +23,70 @@ $names[1] = "Barnetta";
 print_r($names);
 
 echo "<br><br>";
+
+
+
+
+
+
+
+
+
+
+
+
+switch ($which) {
+ case 'first':
+ 	first();
+ 	break;
+
+ case 'second':
+ 	second();
+ 	break;
+
+ case 'third':
+ 	third();
+ 	break;
+}
+
+
+$which();
+
+
+
+*/
+
+
+
+
+$array = array("dddddddddddddddddddddddddddddddddd", "ddddd", "d", "dd");
+
+function comparar($a, $b) {
+	
+	return strlen($a) - strlen($b);
+}
+
+usort($array, 'comparar');
+
+print_r($array);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
